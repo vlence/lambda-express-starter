@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: An express microservice running on AWS Lambda
+
+Resources:
+  App:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda.handler
+      Runtime: nodejs8.10
+      Timeout: 10
+      Events:
+        SayHello:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
