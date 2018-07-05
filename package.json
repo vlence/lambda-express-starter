@@ -1,0 +1,30 @@
+{
+  "name": "lambda-express-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate code for writing an express server that runs in AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "sam local start-api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlence/lambda-express-starter.git"
+  },
+  "keywords": ["node", "nodejs", "express", "microservice", "lambda", "aws"],
+  "author": "Victor Basumatary <victor@intown-solutions.com> (https://about.me/vlence)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlence/lambda-express-starter/issues"
+  },
+  "homepage": "https://github.com/vlence/lambda-express-starter#readme",
+  "devDependencies": {
+    "jest": "^23.3.0",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.2.0",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1"
+  }
+}
